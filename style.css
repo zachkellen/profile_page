@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: black;
+    min-height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container-nav{
+    /* background-color: silver; */
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-main{
+    /* background-color: silver; */
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages {
+    color: white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5em;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    background-color: skyblue;
+    font-size: 17px;
+    border: 0;
+    height: 25px;
+    width: 75px;
+}
+
+main {
+    flex: 2;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+}
+
+.card {
+    min-height: 100px;
+    border: 2px solid silver;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.picture img {
+    background-color: white;
+    border: 2px solid silver;
+    border-radius: 50%;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.card-header {
+    background-color: lightskyblue;
+    height: 65px;
+    margin-bottom: 5px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card-body img {
+    height: 15px;
+}
+
+.secondary-box {
+    border: 2px solid silver;
+    margin-bottom: 20px;
+}
+
+.header {
+    color: white;
+    background-color: rgb(34, 34, 34);
+    min-height: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.body {
+    padding: 10px;
+}
+
+.aside-body {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.grey {
+    color: grey;
+}
+
+.requests {
+    color: black;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.aside-body img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.aside-name {
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.aside-reply {
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.connections {
+    color: black;
+    background-color: grey;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.view-more {
+    width: 100%;
+    min-height: 20px;
+    margin: 0 auto;
+    border-top: 1px solid silver;
+    padding: 10px;
+}
