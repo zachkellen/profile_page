@@ -31,6 +31,10 @@ nav {
     justify-content: space-between;
 }
 
+.edit-profile {
+    cursor: pointer;
+}
+
 .pages {
     color: white;
     list-style: none;

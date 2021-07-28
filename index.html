@@ -29,11 +29,13 @@
                 </div>
                 <div class="card-header"></div>
                 <div class="card-body">
-                    <h2>Jane Doe</h2>
+                    <h2 id="profileName">Jane Doe</h2>
                     <p><img src="./icons/map-marker.png" alt="Map Marker icon"> Seattle</p>
                     <p>Developer | Engineer | Problem Solver</p>
                     <p>Master of shadows and the Internet!</p>
-                    <p><img src="./icons/gear.png" alt="gear icon"> <a href="#">edit profile</a></p>
+                    <div onclick="changeName()" class="edit-profile">
+                        <p><img src="./icons/gear.png" alt="gear icon"> <a href="#">edit profile</a></p>
+                    </div>
                 </div>
             </div>
             <div class="secondary-box">
@@ -50,17 +52,17 @@
         <aside>
             <div class="secondary-box">
                 <div class="header">
-                    <button class="requests">2</button>
+                    <button id="requests" class="requests"></button>
                     <p>Connection Requests</p>
                 </div>
-                <div class="aside-body">
+                <div class="aside-body removal">
                     <div class="aside-name">
                         <img src="./images/todd-s.jpg" alt="A picture of Todd E">
                         <p>Todd E</p>
                     </div>
                     <div class="aside-reply">
-                        <img src="./icons/accept-circle.png" alt="Icon to accept">
-                        <img src="./icons/close-circle.png" alt="Icon to decline">
+                        <img onclick="accept(this)" src="./icons/accept-circle.png" alt="Icon to accept">
+                        <img onclick="deny(this)" src="./icons/close-circle.png" alt="Icon to decline">
                     </div>
                 </div>
                 <div class="aside-body">
@@ -69,14 +71,14 @@
                         <p>Phil K</p>
                     </div>
                     <div class="aside-reply">
-                        <img src="./icons/accept-circle.png" alt="Icon to accept">
-                        <img src="./icons/close-circle.png" alt="Icon to decline">
+                        <img onclick="accept(this)" src="./icons/accept-circle.png" alt="Icon to accept">
+                        <img onclick="deny(this)" src="./icons/close-circle.png" alt="Icon to decline">
                     </div>
                 </div>
             </div>
             <div class="secondary-box">
                 <div class="header">
-                    <button class="connections">500+</button>
+                    <button id="connectionAmount" class="connections"></button>
                     <p>Your Connections</p>
                 </div>
                 <div class="aside-body">
@@ -109,6 +111,7 @@
             </div>
         </aside>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
